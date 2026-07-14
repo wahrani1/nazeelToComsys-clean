@@ -28,24 +28,20 @@ from collections import defaultdict
 # ============================================================================
 # Configuration
 # ============================================================================
-API_KEY = ""
-SECRET_KEY = ""
-BASE_URL = "https://eai.nazeel.net/api/odoo-TransactionsTransfer"
-CONNECTION_STRING = "DRIVER={SQL Server};SERVER=SERVER_NAME;DATABASE=DB_NAME;Trusted_Connection=yes;"
-LOG_FILE = r"C:\Scripts\P03139\nazeel_log.txt"
+from config import API_KEY, SECRET_KEY, BASE_URL, CONNECTION_STRING, LOG_FILE
 
 # Table names
 HED_TABLE = "FhglTxHed"
 DED_TABLE = "FhglTxDed"
 
 # Account codes
-REVENUE_ACCOUNT = "101000020"
-VAT_ACCOUNT = "021500010"
-MUNICIPALITY_TAX_ACCOUNT = "021500090"
-PENALTIES_ACCOUNT = "021100040"
-GUEST_LEDGER_ACCOUNT = "011200010"
-CASH_OVER_SHORT_ACCOUNT = "505000098"
-STAFF_ACCOUNT = "011500070"
+REVENUE_ACCOUNT = ""
+VAT_ACCOUNT = ""
+MUNICIPALITY_TAX_ACCOUNT = ""
+PENALTIES_ACCOUNT = ""
+GUEST_LEDGER_ACCOUNT = ""
+CASH_OVER_SHORT_ACCOUNT = ""
+STAFF_ACCOUNT = ""
 
 # Payment matching thresholds
 EXACT_MATCH_TOLERANCE = 0.01  # SAR
